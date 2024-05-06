@@ -32,3 +32,10 @@ management:
   endpoint:
     shutdown:
       enabled: true
+      
+# Swagger,
+springdoc:
+  api-docs:
+    path: /laptop-api
+  swagger-ui:
+    path: /laptop-ui.html
