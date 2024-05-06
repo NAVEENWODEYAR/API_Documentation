@@ -1,8 +1,14 @@
 
+server:
+  port: 2828
+
+# Database,
 spring:
+  application:
+    name: REST_API_DOC
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/sbdb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/apiDoc?createDatabaseIfNotExist=true
     username: root
     password: boss
   jpa:
@@ -15,3 +21,14 @@ spring:
     jpa:
       repositories:
         enabled: true
+        
+        
+# Actuator,
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
