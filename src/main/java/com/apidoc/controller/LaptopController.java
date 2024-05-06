@@ -59,7 +59,8 @@ public class LaptopController {
 							@ApiResponse(responseCode = "200",description = "Save sucessfull,",
 										content = {@Content(mediaType = "application/json",
 												schema = @Schema(implementation = Laptop.class))}),
-							@ApiResponse(responseCode = "400",description = "Save Failed",content = @Content)})
+							@ApiResponse(responseCode = "400",description = "Save Failed",
+										content = @Content)})
 	@PostMapping("/saveLaptop")
 	public ResponseEntity<Object> addLaptop(@Valid @RequestBody Laptop request){
 		return ResponseEntity.ok(laptopRepo.save(request));
