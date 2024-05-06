@@ -5,11 +5,8 @@ package com.apidoc.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 /**
  * @author LENOVO
@@ -19,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table
+@Table(name = "REST_LAPTOP")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Laptop {
 	
