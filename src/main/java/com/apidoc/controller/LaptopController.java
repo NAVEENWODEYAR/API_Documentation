@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.apidoc.dto.ResponseDto;
 import com.apidoc.entity.Laptop;
 import com.apidoc.repo.LaptopRepo;
 
@@ -43,8 +44,9 @@ public class LaptopController {
 											description = "SUCCESS")})
 	@GetMapping("/greet")
 	@ResponseStatus(code = HttpStatus.OK)
-	public ResponseEntity<Object> greetMsg(){
-		return ResponseEntity.ok("Welcome to SWAGGER_API_DOCUMENTATION");
+	public ResponseEntity<ResponseDto> greetMsg(){
+		ResponseDto response = new ResponseDto(laptopRepo, "Welcome to API Doc",true);
+		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	
 	@Hidden
@@ -66,5 +68,4 @@ public class LaptopController {
 		return ResponseEntity.ok(laptopRepo.save(request));
 		
 	}
-
 }
