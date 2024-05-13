@@ -38,13 +38,7 @@ public class LaptopController {
 		ResponseDto response = new ResponseDto(laptopRepo, "Welcome to API Doc",true);
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
-	
-	@Hidden
-	@DeleteMapping
-	@ResponseStatus(code = HttpStatus.OK)
-	public ResponseEntity<Object> t1(){
-		return ResponseEntity.ok("Welcome SWAGGER_API_DOCUMENTATION");
-	}
+
 	
 	@Operation(summary = "Add Laptop",description = "Insert into TABLE",tags = "SAVE")
 	@ApiResponses(value = {
