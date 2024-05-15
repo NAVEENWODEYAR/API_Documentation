@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.apidoc.service;
 
 import org.springframework.stereotype.Service;

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.apidoc.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -12,6 +9,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author Naveen K Wodeyar
  *@date 10/05/2024
+ * class can be used for API Response customization if needed,
  */
 @Data
 @AllArgsConstructor
