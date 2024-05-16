@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.apidoc.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -9,7 +6,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 /**
- * @author LENOVO
+ * @author Naveen K Wodeyar
+ * @date 16/05/2024
  *
  */
 @EqualsAndHashCode(callSuper = true)

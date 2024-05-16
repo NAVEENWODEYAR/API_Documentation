@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 /**
  * @author Naveen K Wodeyar
  * @date 06-05-2024
- * Configuration for Swagger API Documentation, can be customized according to the requirrements,
+ * Configuration for Swagger API Documentation, can be customized according to the requirements,
  *
  */
 @Configuration
