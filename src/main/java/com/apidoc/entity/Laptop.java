@@ -1,5 +1,8 @@
 package com.apidoc.entity;
 
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.*;
@@ -34,5 +37,9 @@ public class Laptop extends AbstractEntity{
 	
 	@Column(name = "LAPTOP_REVIEW")
 	private String lapReview;
+	
+	@Column(name = "DOB")
+	@JsonFormat(pattern = "dd-MM--yyyy")
+	private LocalDate manufacturedDate;
 
 }

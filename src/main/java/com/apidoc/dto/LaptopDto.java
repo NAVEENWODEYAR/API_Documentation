@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.apidoc.dto;
 
 import com.apidoc.entity.Laptop;
