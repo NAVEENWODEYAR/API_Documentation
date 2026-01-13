@@ -11,7 +11,7 @@ public class RestApiDocumentationApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiDocumentationApplication.class, args);
-		log.info("@SpringBootApp Started,");
+		log.info("RestAPIDocumentationApplication Started,");
 		
 	}
 
