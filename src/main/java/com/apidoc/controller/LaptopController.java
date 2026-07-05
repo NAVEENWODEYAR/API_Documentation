@@ -26,18 +26,18 @@ public class LaptopController {
 	private LaptopRepo laptopRepo;
 	
 	@Operation(tags = "Test endPoint,",
-				description = "Test endpoint to greet,",
+				description = "Test endpoint",
 				responses = {@ApiResponse(responseCode = "200",
 											description = "SUCCESS")})
 	@GetMapping("/greet")
 	@ResponseStatus(code = HttpStatus.OK)
 	public ResponseEntity<ResponseDto> greetMsg(){
-		ResponseDto response = new ResponseDto(laptopRepo, "Welcome to API Doc",true);
+		ResponseDto response = new ResponseDto(laptopRepo, "Welcome to API Documentation",true);
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 
 	
-	@Operation(summary = "Add Laptop",description = "Insert into TABLE",tags = "SAVE")
+	@Operation(summary = "Add Laptop record",description = "Insert into TABLE",tags = "SAVE")
 	@ApiResponses(value = {
 							@ApiResponse(responseCode = "200",description = "Save sucessfull,",
 										content = {@Content(mediaType = "application/json",
